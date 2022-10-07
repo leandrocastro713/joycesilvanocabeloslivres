@@ -1,0 +1,412 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.textos1{
+    font-family: fonteH4;
+    font-size: medium;
+    text-decoration: underline;
+    margin-top: 4vh;
+    color: rgb(8, 35, 35);
+}
+.main { 
+    margin: 0 auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    position: relative;
+    color: rgb(8, 35, 35);
+    align-items: center;
+    width: 700px;
+    padding-top: 1rem;
+} 
+.tratamentos{
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.dermatites{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.centralizado{
+    display: block;
+    float: none;
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+p{
+    line-height: 1.1;
+}
+.parte1{
+    width: 100%; height: 100%;
+    display: block;
+    position: relative;
+    text-align: justify;
+    float: left;
+    border-right: 2px solid gray;
+}
+.parte1 a{
+    text-decoration: none;
+    font-family: fonteH4;
+    font-weight: normal;
+    font-size: larger;
+    color: rgb(8, 35, 35);
+    width: 100%;
+}
+.parte2{
+    display: block;
+    position: relative;
+    float: right;
+    padding: 0;
+    margin: 0 auto;
+}
+.parte2 p{
+    width: 100%;
+    margin: 0 auto;
+}
+.bloquinho{
+    display: block;
+    position: relative;
+    font-family: fonteH4;
+    font-size: 19px;
+    margin: 1rem auto 0rem;
+    margin-bottom: 1rem;
+    max-width: 570px;
+    padding: 1rem;
+}
+.esquerda, .direita{
+    padding: 0;
+    margin: 0 auto;
+    line-height: 1.2;
+    position: relative;
+    text-align: left;
+    width: 96%;
+}
+.esquerda p, .direita p{
+    margin: 0 ;
+    text-align: justify;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    font-size: large;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+.corpo .textos1{
+    text-decoration: underline;
+    text-align: left;   
+    font-size: 16px;
+}
+.subtitulo{
+    font-family: fonteH4;
+    color: rgb(24, 102, 102);
+    font-weight: bolder;
+    text-align: center;
+  }
+#separador{
+    font-family: fonteH4;
+    font-size: 60px;
+    margin: 2rem;
+}
+.st{
+    color: rgb(24, 102, 102);
+    font-family: fonteH4;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+.texto{
+    position: relative;
+    text-align: justify;
+    color: rgb(8, 35, 35);
+    line-height: 1.2;
+    font-family: fonteH4;
+    font-size: 19px;
+    width: 88%;
+}
+.quando-fazer{
+    margin-top: 6px;
+}
+.imagem-alo{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+.image {
+    width: 300px;
+    display: block;
+    height: auto;
+    position: relative;
+    margin: 1rem auto;
+    
+}
+.image-hidro{
+    width: 250px;
+    display: inline-block;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    margin: 1rem auto;
+    /* box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.384); */
+}
+.imagem{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 280px;
+    margin-bottom: 1rem;
+}
+.separador{
+    margin: 0 auto;
+    font-family: fonteH4;
+    font-size: 46px;
+    margin-bottom: 1rem;
+}
+summary{
+    margin-top: -14px;
+    margin-bottom: 16px;
+}
+.topo{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-family: fonteH4;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+  
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 850px){
+    .corpo{
+        margin-left: 1rem;
+    }
+    .corpo .textos {
+        margin-top: 0px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .corpo .textos1 {
+        margin-top: 7px;    
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 728px){
+    .main{
+        width: 90%;
+    }
+    .image-hidro{
+        width: 200px;
+    }
+    .bloquinho{
+        padding: 5px;
+        display: block;
+        position: relative;
+        width: 100%;
+        border: none;
+        display: block;
+    }
+    p{
+        width: 95%;
+        justify-content: left;
+    }
+    .direita{
+        border-bottom: 2px dotted rgb(24, 67, 44);
+    }
+    .tempo1{
+        display: none;
+    }
+    .tempo2{
+        display: unset;
+    }    
+}
+@media (max-width: 550px){
+    .bloquinho{
+        width: 90%;
+        /* margin: 0 auto; */
+        padding: 0px;
+    }
+    .container{
+        border-bottom: 2px dotted rgb(24, 67, 44);
+        width: 97%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #dois{
+        padding: 0;
+    }
+    #dois >div{
+        margin: 0;
+        width: 100%;
+    }
+    .esquerda, .direita{
+        margin: 0 auto;
+        padding: 0;
+        font-weight: normal;
+    }
+    .imagem{
+        margin-bottom: 1rem;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        width: 96%;
+        margin: 0; 
+        padding: 0;
+    }
+    .parte1{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0;;
+        height: fit-content;
+    }
+    .parte1 a{
+        font-weight: normal;
+        padding: 4px;
+    }
+    .parte2{
+        float: none;
+        margin: 0 auto;
+        margin-top: 1rem;
+        display: block;
+        width: 100%;
+        padding-right: 0; 
+        padding-left: 0;
+    }
+
+    .separador{
+        margin: 0 auto;
+        font-family: fonteH4;
+        font-size: 46px;
+    }
+    .st{
+        width: 90%;
+        margin-left: 1.2rem;
+        font-weight: bold;
+    }
+
+    .summary{
+        margin-left: 2.1rem;
+        font-weight: bold;
+    }
+
+    .tratamentos{
+        position: relative;
+        display: block;
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+        padding: 18px;
+    }    
+    .texto{
+        margin: 1.5rem;
+        text-align: justify;
+        width: 100%;
+    }
+    .textos1{
+        margin: 1.5rem auto 1rem auto;
+        font-weight: normal;
+        padding: 0px;
+        float: none;
+        width: 100%;
+    } 
+    video{
+        width: 96%;
+        height: auto;
+    }
+}    
+@media (max-width: 420px){
+    .main{
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .esquerda, .direita{
+        padding-top: 1rem;
+    }
+    .bloquinho{
+        margin: 0;
+        width: 100%;
+    }
+    .parte1, .parte2{
+        width: 100%;
+    }
+    .bloquinho p{
+        text-align: justify;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #dois.dermatites{
+        display: block;
+        width: 96%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    #derma{
+        margin-top: 1rem;
+    }
+    .st{
+        margin-left: 0%;
+        margin-bottom: 8px;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: none;
+    }
+    .container .texto{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .image-hidro{
+        width: 180px;
+        display: block;
+    }
+    .parte2 p{
+        width: 100%;
+    }
+}
+@media (max-width: 320px){
+    .parte2{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .texto{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+    .esquerda, .direita{
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+    .texto{
+        width: 100%;
+    }
+    .centralizado{
+        width: 100%;
+    }
+    .st{
+        margin-bottom: 8px;
+    }
+}

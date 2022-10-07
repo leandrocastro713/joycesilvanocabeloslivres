@@ -1,0 +1,153 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+body{
+    overflow-x: hidden;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    font-family: fonteH4;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    max-width: 900px;
+    overflow-x: hidden;
+}
+.grid img:hover{
+    transition: ease-in-out 300ms;
+    transform: scale(1.06);
+}
+.principal{
+    display: block;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 400px;
+}
+.sidebar{
+    margin: 0px auto;
+    width: 95%;
+}
+.quem{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: -10px;
+}
+.facebook{
+    margin-top: -18px;
+    padding-top: -10px;
+}
+a{
+    text-decoration: none;
+}
+.facebook span, .instagram span, .whatsapp span {
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 8px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(27, 9, 29);
+    background-color: rgba(0,0,0,.4);
+    z-index: 4;
+}
+.whatsapp img{
+    position:relative;
+    align-items: center;
+    margin: 0 auto;
+}
+.facebook, .instagram, .whatsapp{
+    overflow: hidden;
+}
+video{
+    transition: all 500ms;
+    margin: 0 auto;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    cursor: pointer;
+    padding: 0px;
+    border: 12px solid rgb(58, 20, 66)
+}
+video:hover{
+    border:12px solid rgb(127, 116, 130)
+}
+#canal{
+    display: inline-block;
+    font-family: fonteH4;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(21, 13, 22);
+    margin-bottom: 1rem;
+    font-size: 18px;
+    padding: 10px;
+}
+#canal img{
+    height: 50px;
+}
+#canal:hover{
+    font-size: large;  
+    padding: 5px;  
+    transition: all 500ms;
+}
+
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 826px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .video{
+        height: 500px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: none;
+        margin: 0 auto;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;
+    }
+    .video:hover{
+        border: none;
+    }
+    iframe{
+        object-fit: none;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 90%;
+    }
+
+}
+@media (max-width: 366px){
+    .grid{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 96%;
+    }
+    .principal{
+        width: 96%;
+        position: relative;
+        margin: 0 auto;
+    }
+    video{
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 320px;
+        height: auto;
+        border: none;
+    }
+    video:hover{
+        border:none;
+    }
+    .facebook, .instagram, .whatsapp {
+        width: 90%;
+        overflow: hidden;
+    }
+}

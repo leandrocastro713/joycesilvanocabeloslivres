@@ -1,0 +1,254 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+body{
+    overflow-x: hidden;
+    margin-top: 0;
+
+}
+.hide{
+    transition: ease-in-out 500ms;
+    display: block;
+    display: none;
+}
+.grid{
+    transition: ease-in-out 500ms;
+    margin: 0 auto;
+    padding: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 200px 1fr ;
+    width: 98%;
+}
+.choose{
+    transition: ease-in-out 500ms;
+    margin: 0; padding:0;
+    width: 170px;
+}
+.container{
+    transition: ease-in-out 500ms;
+    display: flex;
+    width: 100%  ;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+.produto{
+    transition: ease-in-out 500ms;
+    padding: .5rem;
+    font-family: fonteH4;
+    border: 1px solid rgb(118, 117, 118);
+    border-radius: 4px;
+    margin: 1rem;
+    text-align: center;
+    width: 380px;
+    border-radius: 10px;
+    max-height: 260px;
+}
+.produto img{
+    transition: ease-in-out 500ms;
+    position: relative;
+    display: block;
+    float: left;
+    width: 180px;
+    border-radius: 5px;
+}
+.produto:hover {
+    transition: ease-out 500ms;
+    background-color: rgba(18, 16, 17, 0.2);
+}
+.produto a:hover{
+    transition: ease-in-out 500ms;
+    color:rgb(33, 33, 31);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(6, 17, 69);
+}
+#aviso{
+    font-family: fonteH4;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.marca{
+    transition: ease-in-out 500ms;
+    justify-content: center;
+    padding: 1rem;
+    display: nones;
+    cursor: pointer;
+    width: 200px;
+}
+.marca img{
+    transition: ease-in-out 500ms;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    padding-right: 1rem;
+    width: 150px;
+}
+.marca img:hover{
+    border-right: 2px solid gray;
+}
+.textoProduto{
+    margin-top: 0px;
+    margin-left: -19px;;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-decoration: none;
+    width: 185px;
+    align-items: left;
+    text-align: left;
+    color: rgb(6, 69, 13);
+}
+.descricao{
+    transition: ease-in-out 500ms;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    color: rgb(6, 17, 69);
+    font-weight: 600;
+    display: block;
+    width: 180px;
+    font-family: fonteH4;
+    font-size: 16px;
+    padding-top: 0px;
+}
+.preco{
+    transition: ease-in-out 800ms;
+    font-weight: 600;
+    display: block;
+    float: right;
+    align-items: flex-end;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+#topo{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    font-family: fonteH4;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 1480px){
+    .grid{
+        width: 1060px;
+    }
+}
+@media (max-width: 1058px){
+    .grid{
+        width: 600px;
+    }
+}
+@media (max-width: 910px){
+    .corpo{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+    }
+    .produto{
+        border-radius: 8px;
+        align-items: center;
+        margin: 0rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 600px){
+    .grid{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+    .choose{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+    .container{
+        width: 98%;
+        position: relative;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .descricao{
+        padding-right: 20px;
+    }
+
+}
+@media (max-width: 470px){
+   .textos{
+       margin-bottom: 1rem;
+   }
+   #topo{
+        width: 90%;
+   }
+   .produto{
+        position: relative;
+        justify-content: center;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: 98%;
+        max-height: none;
+        max-width: none;
+   }
+   .textoProduto{
+        padding-left: 0px;
+        /* padding-bottom: 2px; */
+        position: relative;
+        display: flex;
+        text-decoration: none;
+        width: 90%;
+        align-items: left;
+        text-align: left;
+        margin: 1rem;
+        color: rgb(6, 69, 13);
+    }   
+    .produto a img{
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        float: none;
+    }
+    .descricao{
+        width: 90%;
+    }
+    .preco{
+        width: 100%;
+        display: block;
+        float: right;
+        position: relative;
+        margin-right: 8px;
+    }
+}
+@media (max-width: 320px){
+    .titulo{
+        height: 3rem;
+    }
+    .titulo h1{
+        font-size: 28px;
+        float: none;
+    }
+}

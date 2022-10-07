@@ -1,0 +1,219 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.grid{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+.side{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    justify-content: right;
+}
+.hide{
+    transition: ease-in-out 500ms;
+    display: none;
+    opacity: 0;
+}
+.collapse{
+    display: none;
+}
+.side a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-family: fonteH4;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    text-align: end;
+}
+.container{
+    display: block;
+    justify-content: center;
+    align-content: center;
+
+}
+    .loading{
+        /* position: relative;
+        display: block; */
+        margin: auto auto;
+        justify-content: center;
+        align-content: center;
+        width: 200px;
+        height: 200px;
+    }
+        .loading-gif{
+            position: relative;
+            display: block;
+            width: 130px; 
+            height: auto;
+            margin: 0 auto;
+        }
+    .cortes, .antesdepois{
+        transition: all 500ms;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: 1px dotted gray;
+        border-radius: 5px;
+        padding: 5px;
+        max-width: 1200px;
+        min-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .penteados{
+        transition: all 500ms;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: 1px dotted gray;
+        border-radius: 5px;
+        padding: 5px;
+        max-width: 1200px;
+        min-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+.blur1{
+    transition: all 300ms;
+    filter: blur(4px);
+}
+    .imagem{
+        transition: all 500ms;
+        width: 70px;
+        height: 70px;
+        padding: 0px;
+        margin: 6px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .imagem:hover{
+        transform: scale(1.3);
+        filter: sepia(50);
+        width: 90px;
+        height: 90px;
+        margin: -5px;
+        transition: ease-in-out 200ms;
+    }
+#modal_img{
+    float: none;
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 5;
+}
+.modal{
+    transition: ease-in-out 500ms;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+    .modal_content{
+    display: flex;
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+    .modal_active{
+        transition: ease-in-out 500ms;
+        opacity: 1;
+        visibility: visible;
+        align-items: center;
+    }
+    #bt_close{
+        position: absolute;
+        color: white;
+        right: 40px;
+        top: 10px;
+        background-color: black;
+        font-size: large;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid white;
+        z-index: 4;
+    }
+    #bt_close:hover{
+        background-color: rgb(198, 80, 80);
+    }
+.titulo2{
+    font-family: fonteH4;
+    font-size: 19px;
+    font-weight: bold;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 800px){
+    .grid{
+        width: 680px;
+    }
+}
+@media (max-width: 600px){
+    .grid{
+        width: 480px;
+    }
+}
+
+@media (max-width: 470px){
+    .grid{
+        margin-top: 0;
+        max-width: 98%;
+        grid-template-columns: 1fr;
+    }
+    .side a{
+        text-align: center;
+    }
+    #modal_img{
+        width: 98%;  
+        height: auto;
+    }
+}
+@media (max-width: 320px){
+    .titulo2{
+        font-size: 20px;
+    }
+    #bt_close{
+        right: 15px;
+    }
+    .grid{
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .side{
+        /* display: none; */
+        width: 86%;
+        margin: 0 auto;
+    }
+    .side a{
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+
+    }
+    .cortes, .penteados, .antesdepois{
+        width:96%;
+        min-width: unset;
+        margin: 0 auto;
+    }
+}
