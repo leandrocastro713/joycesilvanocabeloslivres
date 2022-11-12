@@ -141,6 +141,7 @@ p{
     width: 250px;
     height: 250px;
     margin-bottom: 1rem;
+    border-radius: 6px;
 }
 .image {
     width: 300px;
@@ -164,6 +165,14 @@ p{
     margin: 0 auto;
     width: 250px;
     height: 280px;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+.img-acid{
+    width:300px;
+    border-radius: 6px;
+    margin: 0 auto;
+    display:block;
     margin-bottom: 1rem;
 }
 .separador{

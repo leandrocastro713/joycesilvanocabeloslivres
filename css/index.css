@@ -31,6 +31,7 @@ p{
     max-width: 400px;
     height: auto;
     margin: 1rem auto 1rem;
+    border-radius: 6px;
 }
 hr{
     color:2px solid rgba(35, 35, 37, 0.799);
@@ -90,9 +91,10 @@ hr{
     border-radius: 18px;
 }
 .joyce-card{
-    max-width: 500px;
+    max-width: 420px;
     width: 100%;
     height: auto;
+    border-radius: 6px;
 }
 .ilustrativo{
     display: flex;
