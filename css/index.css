@@ -66,6 +66,7 @@ hr{
     border-bottom: 1px dotted rgb(15, 15, 20);
 }
 .artigo a{
+    font-weight: bold;
     text-decoration: none;
     color: rgb(29, 7, 29);
 }
@@ -74,10 +75,12 @@ hr{
     font-weight: bolder;
 }
 .artigo p{
+     font-weight: bold;
     text-align: justify;
 }
 .artigo h2{
-    font-size: 19px;
+    font-weight: bolder;
+    font-size: 23px;
     margin-bottom: 0px;
     margin-top: 2.5rem;
     text-align: left;
@@ -143,7 +146,7 @@ hr{
         border-bottom: 1px solid gray;
     }
     .artigo h2{
-        font-size: 19px;
+        font-size: 23px;
         margin-bottom: 0px;
         margin-top: 2.5rem;
         text-align: left;
