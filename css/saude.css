@@ -19,6 +19,7 @@
     padding-top: 1rem;
 } 
 .tratamentos{
+    font-weight: 700;
     margin-bottom: 15px;
     padding: 5px;
 }
@@ -51,7 +52,7 @@ p{
 .parte1 a{
     text-decoration: none;
     font-family: fonteH4;
-    font-weight: normal;
+    font-weight: 600;
     font-size: larger;
     color: rgb(8, 35, 35);
     width: 100%;
@@ -64,6 +65,7 @@ p{
     margin: 0 auto;
 }
 .parte2 p{
+    font-weight: 600;
     width: 100%;
     margin: 0 auto;
 }
@@ -90,6 +92,9 @@ p{
     text-align: justify;
     width: 100%;
 }
+.esquerda u{
+    font-size: larger;
+}
 .container{
     margin: 0 auto;
     display: block;
@@ -107,7 +112,8 @@ p{
 .subtitulo{
     font-family: fonteH4;
     color: rgb(24, 102, 102);
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: larger;
     text-align: center;
   }
 #separador{
@@ -190,6 +196,7 @@ summary{
     position: relative;
     display: block;
     font-family: fonteH4;
+    font-weight: bolder;
     text-align: center;
     width: 90%;
     margin: 0 auto;

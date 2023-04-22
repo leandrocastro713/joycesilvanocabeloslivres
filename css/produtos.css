@@ -62,12 +62,11 @@ body{
 
 a{  text-decoration: none;
     color:rgb(6, 17, 69);    }
-#aviso{     font-family: fonteH4;
-            position: relative;
-            display: block;
-            width: 100%;
-            margin: 10px;
-            text-align: center;  }
+#aviso{     
+    display: block; position: relative; 
+    width: 100%; margin: 10px;
+    font-family: fonteH4; font-weight: 600;
+    text-align: center;  }
 .marca{
     transition: ease-in-out 500ms;
     justify-content: center;

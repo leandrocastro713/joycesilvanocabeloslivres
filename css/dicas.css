@@ -11,14 +11,14 @@
   margin-bottom: 1rem;
 }
 .dica h2{
-  font-weight: bolder;
+  font-weight: bolder; font-size: x-large;
   color: rgb(19, 40, 21);
 }
 .dica p{
   position: relative;
   margin: 0 auto;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   font-size: large;
   width: 90%;
   color: rgb(9, 23, 10) 
