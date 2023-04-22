@@ -52,7 +52,7 @@ p{
 .parte1 a{
     text-decoration: none;
     font-family: fonteH4;
-    font-weight: 600;
+    letter-spacing: 4.5px;font-weight: 600;
     font-size: larger;
     color: rgb(8, 35, 35);
     width: 100%;
@@ -227,7 +227,7 @@ summary{
         width: 200px;
     }
     .bloquinho{
-        padding: 5px;
+        padding: 0px;
         display: block;
         position: relative;
         width: 100%;
@@ -247,16 +247,19 @@ summary{
     .tempo2{
         display: unset;
     }    
+    .parte2{
+        margin:0 auto;
+    }
 }
 @media (max-width: 550px){
     .bloquinho{
-        width: 90%;
+        width: 100%;
         /* margin: 0 auto; */
         padding: 0px;
     }
     .container{
         border-bottom: 2px dotted rgb(24, 67, 44);
-        width: 97%;
+        width: 90%;
         padding: 0;
         margin: 0;
     }
@@ -289,7 +292,8 @@ summary{
         height: fit-content;
     }
     .parte1 a{
-        font-weight: normal;
+        font-weight: 600;
+        letter-spacing: 4.5px;
         padding: 4px;
     }
     .parte2{
@@ -300,6 +304,9 @@ summary{
         width: 100%;
         padding-right: 0; 
         padding-left: 0;
+    }
+    .parte2 p{
+        padding: 24px 5px;
     }
 
     .separador{
