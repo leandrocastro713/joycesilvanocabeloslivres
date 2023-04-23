@@ -253,17 +253,21 @@ summary{
 }
 @media (max-width: 550px){
     .bloquinho{
-        width: 100%;
-        /* margin: 0 auto; */
-        padding: 0px;
+        position:relative;
+        width: 93%;
+        margin:0 auto;
     }
     .container{
         border-bottom: 2px dotted rgb(24, 67, 44);
+        display:block; text-align: center;
         width: 90%;
         padding: 0;
         margin: 0;
     }
-
+    .container p{
+        margin:0 auto;
+        text-align: justify;  width: 93%;
+    }
     #dois{
         padding: 0;
     }
@@ -273,11 +277,15 @@ summary{
     }
     .esquerda, .direita{
         margin: 0 auto;
-        padding: 0;
+        padding: 10px 0px 0px;
         font-weight: normal;
     }
     .imagem{
         margin-bottom: 1rem;
+    }
+    details{
+        scroll-behavior: smooth;
+
     }
     .main{
         grid-template-columns: 1fr;
@@ -297,6 +305,7 @@ summary{
         padding: 4px;
     }
     .parte2{
+        position:relative;
         float: none;
         margin: 0 auto;
         margin-top: 1rem;
@@ -305,8 +314,10 @@ summary{
         padding-right: 0; 
         padding-left: 0;
     }
+    .image-hidro{  display:block;  }
     .parte2 p{
-        padding: 20px 0px;
+        padding: 10px 0px 2px;
+        position:relative;
     }
 
     .separador{
@@ -348,6 +359,9 @@ summary{
         width: 96%;
         height: auto;
     }
+    body{
+        margin:0 auto;
+    }
 }    
 @media (max-width: 420px){
     .main{
@@ -358,6 +372,9 @@ summary{
     .esquerda, .direita{
         padding-top: 1rem;
     }
+    .esquerda p, .direita p{
+        padding: 0px 0px;
+    }
     .bloquinho{
         margin: 0;
         width: 100%;
@@ -367,7 +384,7 @@ summary{
     }
     .bloquinho p{
         text-align: justify;
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
     }
     #dois.dermatites{
