@@ -7,15 +7,15 @@
     color: rgb(8, 35, 35);
 }
 .main { 
+    grid-template-columns: 173px 1fr;
     margin: 0 auto;
     margin-top: 2rem;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 120px 1fr;
     position: relative;
     color: rgb(8, 35, 35);
     align-items: center;
-    width: 700px;
+    max-width: 755px;
     padding-top: 1rem;
 } 
 .tratamentos{
@@ -219,9 +219,9 @@ summary{
         margin-bottom: 1rem;
     }
 }
-@media (max-width: 728px){
+@media (max-width: 768px){
     .main{
-        width: 90%;
+        width: 95%;
     }
     .image-hidro{
         width: 200px;
@@ -276,10 +276,12 @@ summary{
         width: 100%;
     }
     .esquerda, .direita{
+        width:100%;
         margin: 0 auto;
         padding: 10px 0px 0px;
         font-weight: normal;
     }
+    .esquerda{ margin-top: 10px;  }
     .imagem{
         margin-bottom: 1rem;
     }
@@ -290,7 +292,7 @@ summary{
     .main{
         grid-template-columns: 1fr;
         width: 96%;
-        margin: 0; 
+        margin: 0 auto; 
         padding: 0;
     }
     .parte1{
@@ -420,7 +422,7 @@ summary{
 @media (max-width: 320px){
     .parte2{
         margin: 0 auto;
-        width: 100%;
+        width: 95%;
     }
     .container{
         margin: 0 auto;
