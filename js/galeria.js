@@ -32,6 +32,8 @@ ondeInserirCortes.classList.add('hide');
 ondeInserirPenteados.classList.add('hide');
 ondeInserirAntesDepois.classList.add('hide');
 
+loading.classList.remove('hide');
+loading.textContent = 'Carregando cortes ...'
 
 // ----------------- fotos 1 até 96 --- IMAGENS DOS CORTES
 for(let i = 1; i<=96; i++){
@@ -42,7 +44,7 @@ for(let i = 1; i<=96; i++){
         novaImg.className = 'imagem';
         ondeInserirCortes.appendChild(novaImg);
     }
-    if(i>=10 && i<=87){
+    if(i>=10 && i<=92){
         tempArq = './galeria/foto0' + i + '.jpeg';
         novaImg = document.createElement('img');
         novaImg.src = tempArq;
@@ -52,7 +54,9 @@ for(let i = 1; i<=96; i++){
 }
 
 // ---------- fotos 101 até 127 ---- IMAGENS DOS PENTEADOS
-for(let i = 101; i<=127; i++){
+loading.textContent = 'Carregando penteados ...'
+
+for(let i = 101; i<=130; i++){
     tempArq = './galeria/foto' + i + '.jpeg';
     novaImg = document.createElement('img');
     novaImg.src = tempArq;
@@ -61,7 +65,9 @@ for(let i = 101; i<=127; i++){
 }
 
 // -----------fotos 201 até 256 ---- IMAGENS DOS ANTESDEPOIS
-for(let i = 201; i<=256; i++){
+loading.textContent = 'Carregando antes e depois ...'
+
+for(let i = 201; i<=260; i++){
     tempArq = './galeria/foto' + i + '.jpeg';
     novaImg = document.createElement('img');
     novaImg.src = tempArq;
