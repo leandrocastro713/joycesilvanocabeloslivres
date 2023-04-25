@@ -1,44 +1,25 @@
 /* ----------------------- CORPO DO SITE ----------------*/
-p{
-    font-size: 18px;
-    font-weight: 500;
-}
-#hoje{
-    margin: 2rem;
-}
-.corpensem{
-    height: 220px;
-    margin-right: 2rem;
-    margin-left: 1rem;
-    border-radius: 8px;
-}
+p{ font-size: 18px; font-weight: 500; }
+#hoje{ margin: 2rem; }
+.corpensem{  height: 220px; margin-right: 2rem; margin-left: 1rem;
+    border-radius: 8px; }
 .corpo { 
-    max-width: 1270px;
-    font-family: fonteH4;
-    font-size: 16px;
-    margin: 0 auto;
-    margin-top: 14px;
-    margin-bottom: 14px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1rem; align-items: flex-start;
+    max-width: 1270px; width: 90vw;
+    font-family: fonteH4; 
+    margin: 14px auto;
     color: rgb(8, 35, 35);
-    width: 90vw;
-    align-items: flex-start;
 }
 #promo{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 1rem auto 1rem;
+    width: 100%; max-width: 400px;
+    height: auto; margin: 1rem auto 1rem;
     border-radius: 6px;
 }
-hr{
-    color:2px solid rgba(35, 35, 37, 0.799);
-}
+hr{ color:2px solid rgba(35, 35, 37, 0.799); }
 .coluna-esquerda{
     overflow: hidden;
-    margin: 1rem;
     margin: 0;
     padding-right: 1rem;
     border-right: 2px solid gray;
@@ -46,167 +27,88 @@ hr{
 }
 .coluna-direita{
     overflow: hidden;
-    margin: 1rem;
-    margin-top: 0;
-    margin-left: 0px;
+    margin: 0 1rem 1rem 0;
     text-align: left;
 }
-.tempo1{
-    display: none;
-}
-.tempo2{
-    display: block;
-}
+.tempo1{ display: none; }
+.tempo2{ display: block; }
 .artigo{
-    display: block;
-    position: relative;
-    float: none;
-    text-align: center;
-    justify-content: center;
+    display: block; position: relative; float: none;
+    text-align: center; justify-content: center;
     border-bottom: 1px dotted rgb(15, 15, 20);
 }
 .artigo a{
     font-weight: bold;
     text-decoration: none;
     color: rgb(29, 7, 29);
+    transition: ease-in-out 200ms;
 }
 .artigo a:hover{
-    transition: ease-in-out 500ms;
-    font-weight: bolder;
+    transition: ease-in-out 200ms;
+    font-weight: bolder; transform: scale(1.02);
 }
-.artigo p{
-     font-weight: bold;
-    text-align: justify;
-}
+.artigo p{ font-weight: bold; text-align: justify; }
 .artigo h2{
-    font-weight: bolder;
-    font-size: 23px;
-    margin-bottom: 0px;
-    margin-top: 2.5rem;
-    text-align: left;
+    font-weight: bolder; font-size: 23px;
+    margin-top: 2.5rem; margin-bottom: 0px;
+    text-align: left; line-height: 1.4rem;
 }
 .imagem1{
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    margin: 0 auto;
-    filter: invert(.9);
-    border-radius: 18px;
+    width: 80%; max-width: 500px;
+    height: auto; margin: 0 auto;
+    filter: invert(.9); border-radius: 18px;
 }
 .joyce-card{
-    max-width: 420px;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+    max-width: 420px; width: 100%;
+    height: auto; border-radius: 6px;
 }
-.ilustrativo{
-    display: flex;
-    align-items: center;
-}
-.ilustrativo p{
-    font-size: 18px;
-}
+.ilustrativo{ display: flex; align-items: center; }
+.ilustrativo p{  font-size: 18px; }
 .subartigo{
-    display: block;
-    float: none;
-    position: relative;
+    display: block; float: none; position: relative;
     justify-content: center;
 }
 .subartigo2{
-    display: flex;
-    float: none;
-    position: relative;
+    display: flex;float: none;position: relative;
     justify-content: center;
 }
 .textoEsquerda{
-    justify-content: left;
-    text-align: left;
-    font-weight: 500;
+    justify-content: left; text-align: left; font-weight: 500;
+    line-height: 1.2rem;
 }
-.imagem2{
-    height: 320px;
-    border-radius: 8px;
-    margin-right: 2rem;
-    margin-left: 1rem;
-    margin: 2rem;
-}
+.imagem2{ height: 320px; border-radius: 8px; margin: 2rem; }
+
+
 /*---------------------- MEDIA QUERY --------------------*/
 @media (max-width: 840px){
-    .corpo{
-        display: block;
-    }
-    .coluna-direita, .coluna-esquerda{
-        margin: 0 auto;
-        padding: 0;
-        border: none;
-    }
-    .coluna-esquerda{
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid gray;
-    }
-    .artigo h2{
-        font-size: 23px;
-        margin-bottom: 0px;
-        margin-top: 2.5rem;
-        text-align: left;
-    }
-    .coluna-direita h2{
-        padding-top: -1.5rem;
-    }
-    
+    .corpo{ display: block; }
+    .coluna-direita, .coluna-esquerda{ margin: 0 auto;
+            padding: 0; border: none;  }
+    .coluna-esquerda{ margin-bottom: 1rem; padding-bottom: 1rem;
+            border-bottom: 1px solid gray; }
+    .artigo h2{ font-size: 23px; margin-bottom: 0px; 
+        margin-top: 1rem; text-align: left; }
+    .coluna-direita h2{ padding-top: -1.5rem; }
 }
 
 @media (max-width: 600px){
-    .tempo1{
-        display: block;
-    }
-    .tempo2{
-        display: none;
-    }
+    .tempo1{ display: block; }
+    .tempo2{ display: none; }
+    .artigo a{ width: 200px;  }
+    .coluna-esquerda { border-bottom: none; padding-bottom: 1rem; }
 }
-
 @media (max-width: 420px){
-    h2{
-        text-align: center;
-    }
-  
-    .subartigo{
-        margin: 0px;
-        padding: 0px;
-    }
-    .subartigo2{
-        margin: 0px;
-        padding: 0px;
-    }
-    .corpensem{
-        margin: 0;
-        padding: 2px;
-        width: 98%;
-        align-items: center;
-        height: 98%;
-    }
-    .imagem1{
-        width: 98%;
-        margin: 0 auto;
-    }
-    .imagem2{
-        transform: scale(1);
-        width: 90%;
-        height: auto; 
-        margin: auto;
-    }
-    .coluna-esquerda{
-        border-bottom: none;
-    }
-    .coluna-direita h2{
-        margin-top: 1rem;
-        border-top: none;
-    }
+    h2{ text-align: center; }
+    .subartigo{ margin: 0px; padding: 0px;  }
+    .subartigo2{ margin: 0px; padding: 0px; }
+    .corpensem{ margin: 0; padding: 2px; width: 98%; height: 98%;
+                align-items: center;  }
+    .imagem1{ width: 98%; margin: 0 auto;  }
+    .imagem2{ transform: scale(1); width: 90%; height: auto; 
+                margin: auto; }
+    .coluna-esquerda{ border-bottom: none; }
+    .coluna-direita h2{ margin-top: 1rem; border-top: none;  }
 }
-@media (max-width: 320px){
-    .artigo h2{
-            text-align: center;
-        }
-    
+@media (max-width: 320px){ 
+    .artigo h2{ text-align: center; }
 }
