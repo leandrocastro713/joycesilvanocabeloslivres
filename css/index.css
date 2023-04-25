@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 /* ----------------------- CORPO DO SITE ----------------*/
 p{ font-size: 18px; font-weight: 500; }
 #hoje{ margin: 2rem; }

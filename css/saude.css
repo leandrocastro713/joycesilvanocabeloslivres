@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 /* ----------------------- CORPO DO SITE ----------------*/
 .textos1{
     font-family: fonteH4;
