@@ -176,15 +176,18 @@ ul#menu{
   justify-content: left;
 }
 .lf-text{
-  display: block;
+  display: flex;
   font-size: 16px;
   font-weight: bold;
-  margin: 0 1rem;
+  margin: 0 .7rem 0;
   padding: .5rem 0;
   width: 100%;
   position: relative;
   text-align: left;
 }
+  .lf-text img{ width: 20px; height: 20px; padding-left: .2rem; }
+  .lf-text a{ text-decoration: none; padding-left: .5rem; }
+
 .wp-footer, .ig-footer, .fb-footer{
   display: grid; grid-template-columns: 30px 135px;
   position: relative;

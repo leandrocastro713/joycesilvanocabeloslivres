@@ -81,7 +81,6 @@ hr{ color:2px solid rgba(35, 35, 37, 0.799); }
 }
 .imagem2{ height: 320px; border-radius: 8px; margin: 2rem; }
 
-
 /*---------------------- MEDIA QUERY --------------------*/
 @media (max-width: 840px){
     .corpo{ display: block; }
